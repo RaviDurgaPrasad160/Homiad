@@ -1,0 +1,12 @@
+.video-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.video-item {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    display: block;
+  }

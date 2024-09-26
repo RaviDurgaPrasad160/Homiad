@@ -1,0 +1,41 @@
+
+.navbar{
+    background-image: linear-gradient(to right, #f1f2e3,#6ecbdd);
+    /* box-shadow: 0 3px 8px rgb(165, 163, 163); */
+}
+.brandLogo{
+    display: flex;
+    align-items: center;
+}
+.brandName{
+    color: #216c5de6;
+}
+.nav-link{
+    margin: 0 13px;
+    color: #000000 !important;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+button:active{
+    outline: none !important;
+    box-shadow: none;
+    border: none !important;    
+}
+@media(min-width: 992px){
+    .nav-link.active{
+        color: #ffffff !important;
+        background-color: #172554;
+        border-radius: 10px; 
+    }
+}
+
+@media(max-width: 992px){
+    .nav-link.active{
+        color: #080053 !important;
+        font-weight: bold;
+    }
+    div.nav-item{
+        border-bottom: 1px solid #0800531c;
+    }
+}
