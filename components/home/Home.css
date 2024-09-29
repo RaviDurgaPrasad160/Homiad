@@ -46,6 +46,10 @@
 /* section2 */
 .section2{
   background-image: url('../../Images/alternative-service-section.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .card{
   width: 450px;
