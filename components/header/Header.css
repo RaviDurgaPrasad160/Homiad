@@ -1,7 +1,6 @@
 
 .navbar{
     background-image: linear-gradient(to right, #f1f2e3,#6ecbdd);
-    /* box-shadow: 0 3px 8px rgb(165, 163, 163); */
 }
 .brandLogo{
     display: flex;
