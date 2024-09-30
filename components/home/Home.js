@@ -6,6 +6,11 @@ import {Carousel, Stack, Button, Card} from 'react-bootstrap'
 import img1 from '../../Images/car-1.webp'
 import img2 from '../../Images/car-2.webp'
 import img3 from '../../Images/car-3.webp'
+import { IoMdStar } from "react-icons/io";
+import img4 from '../../Images/alternative-service-cleaning.webp'
+import img5 from '../../Images/alternative-service-cooking.webp'
+import img6 from '../../Images/why-choose-us.webp'
+
 
 
 function Home() {
@@ -19,6 +24,7 @@ function Home() {
           <video src={Video2} className='d-block w-100' autoPlay muted loop></video>
         </div>
      </div>
+       {/* Section1----------------------------- */}
      <div className='section1'>
       <Stack direction='horizontal'>
         <div className="section1-content p-3">
@@ -43,30 +49,38 @@ function Home() {
         </div>
         </Stack>
       </div>
+      {/* Section2----------------------------- */}
       <div className='section2'>
-        <h1 className='section2-heading'>WHAT WE OFFER?</h1>
-        <div className='section2-container'>
-          <div className='custom-card'>
-            {/* <img src="" alt="cooking" /> */}
+        <h1 className='section2-heading text-center pt-5 p-3'>WHAT WE OFFER?</h1>
+        <div className='section2-container pb-5'>
+          <Stack direction='horizontal hstack1'>
+          <div className='custom-card1'>
             <Card>
+              <Card.Img variant='top' src={img5}/>
               <Card.Body>
                 <Card.Title className='fs-2 fw-bold text-center'>Cooking</Card.Title>
                 <Card.Text className='text-center'>Welcome to the world of flavour, innovation and endless possibilities in kitchen.</Card.Text>
-                <Button>Book Now</Button>
+                <Card.Text className='fw-bold text-center p-0'><IoMdStar className='text-warning p-0 fs-3'/> 4.8 (2.1k+)</Card.Text>
+                <Button className='d-block mx-auto'>Book Now</Button>
               </Card.Body>
             </Card>
           </div>
-          <div className='custom-card'>
-            {/* <img src="" alt="cleaning" /> */}
+          <div className='custom-card2'>
             <Card>
+              <Card.Img variant='top' src={img4} />
               <Card.Body>
                 <Card.Title className='fs-2 fw-bold text-center'>Cleaning</Card.Title>
-                <Card.Text className='text-center'>We believe in transforming the chore of cleaning into a delightful and efficient experience.</Card.Text>
-                <Button>Book Now</Button>
+                <Card.Text className='text-center pb-0'>We believe in transforming the chore of cleaning into a delightful and efficient experience.</Card.Text>
+                <Card.Text className='fw-bold text-center p-0'><IoMdStar className='text-warning p-0 fs-3'/> 4.8 (2.1k+)</Card.Text>
+                <Button className='d-block mx-auto'>Book Now</Button>
               </Card.Body>
             </Card>
           </div>
+          </Stack>
         </div>
+      </div>
+      <div>
+        <img src={img6} alt="all services" className='d-block w-100'/>
       </div>
     </div>
   )

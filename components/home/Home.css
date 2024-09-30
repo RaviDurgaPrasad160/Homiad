@@ -51,8 +51,47 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.custom-card1{
+  margin: 0 auto;
+}
+.custom-card2{
+  margin: 0 auto;
+}
+.card:hover{
+  box-shadow: none;
+  cursor: pointer;
+}
+
 .card{
   width: 450px;
-  height: 450px;
+  height: 400px !important;
   background: #b7e1a14d !important;
+  transition: all 0.5s ease-in;
+  box-shadow: 3px 3px 6px #696464, -3px -3px 6px #696464;
+}
+.card-img-top{
+  height: 180px;
+}
+.vstack {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+}
+@media(max-width:1050px){
+  .vstack{
+    display: block !important;
+  }
+  .custom-card1{
+    margin-bottom: 60px;
+  }
+  .card{
+    margin: 0 auto;
+  }
+}
+
+@media(max-width:650px) {
+  .card{
+    width: 350px;
+    height: 420px !important;
+  }
 }
