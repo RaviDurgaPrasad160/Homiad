@@ -133,6 +133,7 @@ function Home() {
           contentArrowStyle={{ }}
           iconStyle={{ background: '#ffffff', color: '#000000', width: '40px', height:'40px', marginLeft: '-19.5px', marginTop:'14px' }}
           icon={<GiCampCookingPot />}
+          date='Cooking for Busy Schedules'
           >
             <Card className="timeline-card">
               <Card.Img src={img7}></Card.Img>
@@ -148,6 +149,7 @@ function Home() {
           contentArrowStyle={{ }}
           iconStyle={{ background: '#ffffff', color: '#000000', width: '40px', height:'40px', marginLeft: '-19.5px', marginTop:'14px' }}
           icon={<GiCampCookingPot />}
+          date='Cooking for Busy Schedules'
           >
             <Card className="timeline-card">
               <Card.Img src={img8}></Card.Img>
@@ -163,6 +165,7 @@ function Home() {
           contentArrowStyle={{ }}
           iconStyle={{ background: '#ffffff', color: '#000000', width: '40px', height:'40px', marginLeft: '-19.5px', marginTop:'14px' }}
           icon={<GiCampCookingPot />}
+          date='Cooking for Busy Schedules'
           >
             <Card className="timeline-card">
               <Card.Img src={img9}></Card.Img>
@@ -178,6 +181,7 @@ function Home() {
           contentArrowStyle={{ }}
           iconStyle={{ background: '#ffffff', color: '#000000', width: '40px', height:'40px', marginLeft: '-19.5px', marginTop:'14px' }}
           icon={<MdCleaningServices />}
+          date='Cooking for Busy Schedules'
           >
             <Card className="timeline-card">
               <Card.Img src={img10}></Card.Img>
@@ -193,6 +197,7 @@ function Home() {
           contentArrowStyle={{ }}
           iconStyle={{ background: '#ffffff', color: '#000000', width: '40px', height:'40px', marginLeft: '-19.5px', marginTop:'14px' }}
           icon={<MdCleaningServices />}
+          date='Cooking for Busy Schedules'
           >
             <Card className="timeline-card">
               <Card.Img src={img11}></Card.Img>
@@ -208,6 +213,7 @@ function Home() {
           contentArrowStyle={{ }}
           iconStyle={{ background: '#ffffff', color: '#000000', width: '40px', height:'40px', marginLeft: '-19.5px', marginTop:'14px' }}
           icon={<MdCleaningServices />}
+          date='Cooking for Busy Schedules'
           >
             <Card className="timeline-card">
               <Card.Img src={img12}></Card.Img>

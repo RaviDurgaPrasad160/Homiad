@@ -109,25 +109,46 @@
 }
 
 /* vertical timeline vertical timeline vertical timeline vertical timeline */
-.timeline-card{
+
+.timeline-card {
   width: 100%;
   height: auto !important;
   background: #ffffff; 
   box-shadow: none;
   border: none !important;
 }
-.vertical-timeline::before{
+.vertical-timeline::before {
   background: #000000 !important;
 }
-.vertical-timeline-element-content{
+.vertical-timeline-element-content {
   box-shadow: none !important;
 }
 .vertical-timeline-element-content-arrow {
   border: none !important;
-  border-right: none !important;
+}
+.vertical-timeline-element-date {
+  color: #000000;
+}
+
+@media (min-width:992px) and (max-width:1170px){
+  .vertical-timeline-element:nth-child(even) .vertical-timeline-element-date {
+    position: absolute !important;
+    width: 100% !important;
+    left: -318px !important;
+    top: 4px !important;
+    font-size: 1rem !important;
+  }
 }
 
 @media only screen and (min-width: 992px) {
+  .vertical-timeline-element:nth-child(odd) .vertical-timeline-element-date {
+    position: absolute !important;
+    width: 100% !important;
+    left: 124% !important;
+    top: 6px !important;
+    font-size: 1rem !important;
+  }
+  
   .vertical-timeline-element:nth-child(even) .vertical-timeline-element-content::before {
     content: "";
     position: absolute;
@@ -138,7 +159,7 @@
     border-bottom: 10px solid transparent;
     z-index: 0;
   }
-  .vertical-timeline-element:nth-child(even) .vertical-timeline-element-content::after{
+  .vertical-timeline-element:nth-child(even) .vertical-timeline-element-content::after {
     content: "";
     position: absolute;
     top: 22px !important;
@@ -148,7 +169,7 @@
     border-bottom: 10px solid transparent;
     z-index: 1;
   }
-  
+
   .vertical-timeline-element:nth-child(odd) .vertical-timeline-element-content::before {
     content: "";
     position: absolute;
@@ -159,7 +180,7 @@
     border-bottom: 10px solid transparent;
     z-index: 0;
   }
-  
+
   .vertical-timeline-element:nth-child(odd) .vertical-timeline-element-content::after {
     content: "";
     position: absolute;
@@ -170,48 +191,62 @@
     border-bottom: 10px solid transparent;
     z-index: 1;
   }
+
   .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content {
-      float: right !important;
+    float: right !important;
   }
 
   .vertical-timeline--two-columns .vertical-timeline-element-content {
-      margin-left: 0 !important;
-      padding: 1.5em !important;
-      width: 44% !important; /* Maintain 2 columns */
-  }
-  .vertical-timeline.vertical-timeline--two-columns:before {
-        left: 50%;
-        margin-left: -2px;
-    }
-    .vertical-timeline--two-columns .vertical-timeline-element-icon {
-      left: 50%;
+    margin-left: 0 !important;
+    padding: 1.5em !important;
+    width: 44% !important; 
   }
 
+  .vertical-timeline.vertical-timeline--two-columns::before {
+    left: 50%;
+    margin-left: -2px;
+  }
+
+  .vertical-timeline--two-columns .vertical-timeline-element-icon {
+    left: 50%;
+  }
 }
-@media(max-width:991px) {
-  .vertical-timeline-element-icon{
-    width: 30px !important ;
+
+@media(max-width: 991px) {
+  .vertical-timeline-element-icon {
+    width: 30px !important;
     height: 30px !important;
     margin-left: 5px !important;
   }
+  
   .vertical-timeline-element-content::before {
     content: "";
     position: absolute;
-    top: 22px !important; 
+    top: 22px !important;
     left: -19px; 
     border-right: 18px solid black;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     z-index: 0;
   }
-  .vertical-timeline-element-content::after{
+
+  .vertical-timeline-element-content::after {
     content: "";
     position: absolute;
     top: 22px !important;
     left: -17px; 
-    border-right: 18px solid white; 
+    border-right: 18px solid white;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
     z-index: 1;
   }
+
+  .vertical-timeline-element-date{
+    display: none !important;
+  }
+}
+
+.timeline-card img {
+  width: 100%;
+  height: auto;
 }
