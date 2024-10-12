@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Home.css'
 import Video2 from "../../Videos/cleaning-vid.webm"
 import Video1 from "../../Videos/cooking-vid.webm"
-import {Carousel, Stack, Button, Card} from 'react-bootstrap'
+import {Carousel, Stack, Button, Card, Form} from 'react-bootstrap'
 import img1 from '../../Images/car-1.webp'
 import img2 from '../../Images/car-2.webp'
 import img3 from '../../Images/car-3.webp'
@@ -18,6 +18,7 @@ import img11 from '../../Images/cleaning-blog-2.webp'
 import img12 from '../../Images/cleaning-blog-1.webp'
 import { CiStar } from "react-icons/ci";
 import { GiCampCookingPot } from "react-icons/gi";
+import { TiStarFullOutline } from "react-icons/ti";
 import { MdCleaningServices } from "react-icons/md";
 import { IoIosPeople } from "react-icons/io";
 import CountUp from 'react-countup'
@@ -224,6 +225,64 @@ function Home() {
             </Card>
           </VerticalTimelineElement>
         </VerticalTimeline>
+      </div>
+      {/* feedback container */}
+      <div className="feedback-container p-4">
+        <div className="feedback-input text-center">
+          <div className="feedback-front">
+            <div className='feedback-headings'>
+              <h1>Express</h1>
+              <h1>Your</h1>
+              <h1>Experience</h1>
+            </div>
+            <div className='feedback-butten'>
+              <Button className='Tbutton'>Hover Me</Button>
+            </div>
+          </div>
+          <div className="feedback-back text-center">
+            <Form >
+              <Form.Group className='mb-3'>
+                <Form.Control type='text' placeholder='Name' className='input-filed'/>
+              </Form.Group>
+              <Form.Group className='mb-3'>
+                <Form.Control type='email' placeholder='Email' className='input-filed'/>
+              </Form.Group>
+              <Form.Group className='mb-3'>
+                <Form.Control as='textarea' rows={2} placeholder='Your Feedback' className='input-filed'/>
+              </Form.Group>
+              <Button variant="primary">Submit</Button>
+            </Form>
+          </div>
+        </div>
+        <div className="feedback-output">
+        <div className="feedback-output-inner">
+              <div className="output-para">
+              <p className='fw-bold p-0 m-0'>The cleaning service was incredibly thorough and efficient. I'm impressed!</p>
+              <span className='p-0'>by Dhruva</span><br />
+              <span className='star'><TiStarFullOutline /><TiStarFullOutline /><TiStarFullOutline /><TiStarFullOutline /><TiStarFullOutline /></span>
+              </div>
+              <div className="output-para">
+              <p className='fw-bold p-0 m-0'>The cleaning service was incredibly thorough and efficient. I'm impressed!</p>
+              <span className='p-0'>by Prasad</span><br />
+              <span className='star'><TiStarFullOutline /><TiStarFullOutline /><TiStarFullOutline /><TiStarFullOutline /><TiStarFullOutline /></span>
+              </div>
+              <div className="output-para">
+              <p className='fw-bold p-0 m-0'>The cleaning service was incredibly thorough and efficient. I'm impressed!</p>
+              <span className='p-0'>by Chandra</span><br />
+              <span className='star'><TiStarFullOutline /><TiStarFullOutline /><TiStarFullOutline /><TiStarFullOutline /><TiStarFullOutline /></span>
+              </div>
+              <div className="output-para">
+              <p className='fw-bold p-0 m-0'>The cleaning service was incredibly thorough and efficient. I'm impressed!</p>
+              <span className='p-0'>by Sai</span><br />
+              <span className='star'><TiStarFullOutline /><TiStarFullOutline /><TiStarFullOutline /><TiStarFullOutline /><TiStarFullOutline /></span>
+              </div>
+              <div className="output-para mb-0">
+              <p className='fw-bold p-0 m-0'>The cleaning service was incredibly thorough and efficient. I'm impressed!</p>
+              <span className='p-0'>by Durga</span><br />
+              <span className='star'><TiStarFullOutline /><TiStarFullOutline /><TiStarFullOutline /><TiStarFullOutline /><TiStarFullOutline /></span>
+              </div>
+          </div>
+        </div>
       </div>
     </div>
   )
